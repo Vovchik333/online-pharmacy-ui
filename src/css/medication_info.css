@@ -1,0 +1,35 @@
+.medication-page{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.medication-page div{
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.medication-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medication-page .details{
+    display: flex;
+    flex-direction: column;
+}
+
+.details p{
+    padding: 5px;
+    border-bottom: 1px black solid;
+}
+
+.medication-page .description{
+    grid-column: 1 / 3;
+
+}
+

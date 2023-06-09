@@ -1,0 +1,77 @@
+.navbar{
+    position: relative;
+    /* height: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 10px;
+    
+}
+
+.navbar .navbar-ref{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.list li:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+
+#toggler, .navbar label{
+    display: none;
+}
+
+@media screen and (max-width: 650px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .list li{
+        height: 20px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border: black solid 3px;
+        border-radius: 10px;
+    }
+
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /*  #toggler:checked ~ .navbar{
+        height: auto;
+        max-height: 100%;
+    } */
+
+    #toggler:checked ~ .menu{
+        /* height: auto; */
+        max-height: 100%;
+    }
+}

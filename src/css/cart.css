@@ -1,0 +1,115 @@
+.cart-page{
+    margin: 50px;
+}
+
+.cart-item-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cart-elem{
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cart-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.cart-item .item-container{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-container .inc-dec-quantity{
+    width: 100px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inc-dec-quantity button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.inc-dec-quantity p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item-container .remove-button{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+    .cart-item{
+        flex-direction: column;
+        margin: 20px;
+        gap: 5px;
+    }
+
+    .cart-item .item-container{
+        width: 100%;
+    }
+
+    .item-container .text-par{
+        width: 100%;
+        align-self: flex-start;
+    }
+}
+
+.ordering-panel{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.ordering-panel .to-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+}
